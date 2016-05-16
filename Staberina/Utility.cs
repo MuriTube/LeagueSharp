@@ -168,7 +168,7 @@ namespace Staberina
                 d *= 1.015f;
             }
 
-            var ignite = TreeLib.Managers.SpellManager.Ignite;
+            var ignite = 0;
             if (ignite != null && ignite.IsReady())
             {
                 d += (float) ObjectManager.Player.GetSummonerSpellDamage(unit, Damage.SummonerSpell.Ignite);
